@@ -1,0 +1,17 @@
+version: "3.0"
+
+services: 
+    
+    db:
+        container_name: mysql-server
+        build: 
+            context: .
+            dockerfile: ./mysql-server.dockerfile
+        image: thiagodiasdev/cartao-fiap-db
+        networks: 
+            - dev-net
+        ports: 
+            - "3306:3306"
+networks:
+    dev-net:
+        driver: bridge
