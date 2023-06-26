@@ -29,9 +29,9 @@ ___
     <li>post (/alunos/cadastrarAluno) - Faz upload do arquivo txt e cria todos os alunos</li>
     <li>post (/alunos/{id}/comprar) - cadastra uma compra do aluno</li>
     <li>get (/alunos/{id}/extrato) - Gera um extrato com as compras do aluno</li>
-    <li>get (/alunos/listarAlunos) - Retorna uma lista paginada com todos os alunos. 
-    <li>get (/alunos/filtrarAlunoPorId/{id}) - Retorna o aluno pelo id</li>
-    <li>put (/alunos/atualizarAluno/{id}) - Atualiza o aluno pelo id</li>
-    <li>delete (/alunos/deletarAluno/{id}) - Realiza o soft delete do aluno pelo id</li>
+    <li>get (/alunos/) - Retorna uma lista paginada com todos os alunos. 
+    <li>get (/alunos/{id}) - Retorna o aluno pelo id</li>
+    <li>put (/alunos/{id}) - Atualiza o aluno pelo id</li>
+    <li>delete (/alunos/{id}) - Realiza o soft delete do aluno pelo id</li>
 </p>
 
