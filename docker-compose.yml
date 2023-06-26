@@ -1,42 +1,17 @@
-# version: '3'
-# services:
-#     #compra:
-#     #    image: compra:1.0
-#     #    ports:
-#     #    - 8084:8084
-#     #    deploy:
-#     #        replicas: 2
-#     db:
-#         container_name: mysql-server
-#         build: 
-#             context: .
-#             dockerfile: ./mysql-server.dockerfile
-#         image: thiagodiasdev/cartao-fiap-db:latest
-#         ports:
-#             - "3306:3306"
-#         deploy:
-#             replicas: 1
-#         networks:
-#             - net
-# networks:
-#     net:
-#         driver: overlay
 version: '3.8'
-
 services:
   db:
-    image: thiagodiasdev/cartao-fiap-db:latest
-    build: 
-        context: .
-        dockerfile: ./mysql-server.dockerfile
+    image: 'thiagodiasdev/cartao-fiap-db:latest'
+    build:
+      context: .
+      dockerfile: ./mysql-server.dockerfile
     deploy:
       replicas: 1
     ports:
-        -   3036:3036
+      - '3036:3036'
   api:
-    image: compra:latest
+    image: 'compra:latest'
     ports:
-      - 8084:8084
+      - '8084:8084'
     deploy:
       replicas: 2
-
