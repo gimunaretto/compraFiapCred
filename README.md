@@ -1,6 +1,6 @@
 # CARTÃO - FIAP
 
-## Avaliação Spring
+## Avaliação Containers e Virtualization
 ___
 
 
@@ -9,6 +9,7 @@ ___
     <li>SpringBoot 2.7.9</li>
     <li>Java 11</li>
     <li>Docker - Mysql</li>
+    <li>Logger com SLF4J</li>
     <li>Documentação Swagger</li>
 </p>
 
